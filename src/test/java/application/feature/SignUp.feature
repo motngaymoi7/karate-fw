@@ -32,3 +32,4 @@ Feature: Sign up new user
         }
       }
     """
+    * def userName = randomUser

@@ -10,6 +10,12 @@ public class DataGenerator {
         return email;
     }
 
+    public static String getRandomArticleName(){
+        Faker faker = new Faker();
+        String articleName = "Article " + faker.random().nextInt(0, 1000);
+        return articleName;
+    }
+
     public static String getRandomUsername(){
         Faker faker = new Faker();
         String username = faker.name().username();
